@@ -24,9 +24,11 @@ for building and running IGV.
 
 # Usage
 
+*At the moment, IGV support is limited to the `git@github.com:jmesyou/omr` fork*
+
 The JVM support is controlled by the flag `-Xjit:dumpMethodTrees`, where Testarossa IL will be dumped at the debug points controlled by the options documented in [`eclipse/omr`](https://github.com/eclipse/omr/blob/master/doc/compiler/CompilerOptions.md). Note if you do not enable logging then no method tree dumps will be generated either.
 
-Each method and its corresponding Testarossa IL after each optimization pass will be dumped in its own file. The file has the format `TestarossaCompiler-$ID[$METHOD_SIGNATURE][$COMPILATION_LEVEL].xml` which can be broken down into:
+Each method and its corresponding Testarossa IL after each optimization pass will be dumped in its own file. The file has the format `TestarossaCompilation-$ID[$METHOD_SIGNATURE][$COMPILATION_LEVEL].xml` which can be broken down into:
 
 - `$ID`: The order in which the trees are compiled
 - `$METHOD_SIGNATURE`: The Java bytecode signature of the method
