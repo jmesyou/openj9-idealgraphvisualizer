@@ -1,0 +1,32 @@
+var DARK_PURPLE  = java.awt.Color.decode("#6929c4");
+var HYDRANGEA    = java.awt.Color.decode("#9f1853");
+var WARPSTONE    = java.awt.Color.decode("#198038");
+var SAND         = java.awt.Color.decode("#b28600");
+var ESPRESSO     = java.awt.Color.decode("#8a3800");
+var BLUE         = java.awt.Color.decode("#1192e8");
+var WATERMELON   = java.awt.Color.decode("#fa4d56");
+var DARK_BLUE    = java.awt.Color.decode("#002d9c");
+var CYAN         = java.awt.Color.decode("#009d9a");
+var LIGHT_PURPLE = java.awt.Color.decode("#a56eff");
+var TEAL         = java.awt.Color.decode("#005d5d");
+var DARK_RED     = java.awt.Color.decode("#570408");
+var MAGENTA      = java.awt.Color.decode("#ee538b");
+var DARK_CYAN    = java.awt.Color.decode("#012749");
+
+var ALERT_RED    = java.awt.Color.decode("#da1e28");
+var ALERT_YELLOW = java.awt.Color.decode("#f1c21b");
+var ALERT_ORANGE = java.awt.Color.decode("#ff832b");
+var ALERT_GREEN  = java.awt.Color.decode("#198038");
+
+
+colorize(matches("category", "DirectLoad"),    CYAN);
+colorize(matches("category", "IndirectLoad"),  DARK_CYAN);
+colorize(matches("category", "Constant"),      BLUE);
+colorize(matches("category", "Call"),          ALERT_RED);
+colorize(matches("category", "Store"),         SAND);
+colorize(matches("category", "IndirectStore"), ESPRESSO);
+colorize(matches("category", "If"),            ALERT_ORANGE);
+colorize(matches("category", "BBStart"),       MAGENTA);
+colorize(matches("category", "BBEnd"),         MAGENTA);
+colorize(matches("isTreeTop", "true"),         HYDRANGEA);
+colorize(matches("isTreeTop", "false"),        TEAL);

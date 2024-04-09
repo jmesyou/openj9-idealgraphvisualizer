@@ -106,6 +106,7 @@
         <module>Filter</module>
         <module>Bytecodes</module>
         <module>ServerCompiler</module>
+        <module>TestarossaCompiler</module>
         <module>FilterWindow</module>
         <module>View</module>
     </modules>

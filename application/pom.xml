@@ -137,6 +137,11 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
+            <artifactId>TestarossaCompiler</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
             <artifactId>FilterWindow</artifactId>
             <version>${project.version}</version>
         </dependency>

@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.testarossa.compiler
+OpenIDE-Module-Layer: org/testarossa/compiler/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/testarossa/compiler/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
